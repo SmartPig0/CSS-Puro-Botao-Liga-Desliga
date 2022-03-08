@@ -79,4 +79,15 @@ h1 {
     .ligadesliga-botao::after{
     top: 217px;
     }
+    
+@media only screen and (max-device-width:415px) {
+   
+    .ligadesliga-botao::after{
+    top: 218px;
+    }
+@media only screen and (max-device-width:348px) {
+   
+        .ligadesliga-botao::after{
+        top: 220px;
+        }
 
