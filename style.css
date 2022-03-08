@@ -74,3 +74,9 @@ h1 {
     color: #000;
 }
 
+@media only screen and (max-device-width:348px) {
+   
+    .ligadesliga-botao::after{
+    top: 211px;
+    }
+
