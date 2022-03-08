@@ -1,0 +1,76 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+header {
+    box-sizing: border-box;
+    border: solid 10px white; 
+    padding: 30px;
+    gap: 10px;
+}
+
+h1 {
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+
+.naochecado{
+    visibility:hidden; 
+}
+
+.ligadesliga-botao::before,
+.ligadesliga-botao::after {
+    
+    content: "";
+    transition:  0.5s ease-in-out 0.3s;
+}
+
+.ligadesliga-botao::before {
+    box-sizing: border-box;
+    height: 60px;
+    width: 140px;
+    border: dotted 0.5px white;
+    background-color: rgb(138, 137, 137);
+    display: flex;
+    border-radius: 100px;
+}
+
+.ligadesliga-botao::after {
+    border-radius: 100%;
+    background-color: #fff;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    display: block;
+    position: fixed;
+    top: 175px;
+    margin-left: 5px;    
+}
+
+.fundo {
+    background-color: #000;
+}
+
+.naochecado:checked + .ligadesliga-botao::after {
+    margin-left: 85px;
+}
+
+.naochecado:checked + .ligadesliga-botao::before {
+    background-color: rgb(213, 210, 210); 
+    border: solid 0.5px white;
+}
+
+.naochecado:checked + .fundo{
+    background-color: #fff;
+    color: #000;
+}
+
